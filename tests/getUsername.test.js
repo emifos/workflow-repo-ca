@@ -11,4 +11,8 @@ describe("getUsername", () => {
     localStorage.setItem("user", JSON.stringify(user));
     expect(getUsername()).toBe("Jane");
   });
+
+  it("return null when no user exist instorage", () => {
+    expect(getUsername()).toBeNull();
+  });
 });
