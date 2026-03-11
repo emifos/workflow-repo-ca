@@ -12,4 +12,18 @@ test.describe("Login functionality", () => {
 
     await expect(page.getByRole("button", { name: "Logout" })).toBeVisible();
   });
+
+  test("an error message is shown with invalid credentials", async ({
+    page,
+  }) => {
+    await page.goto("/login");
+    await page.locator('input[name="email"]').fill(process.env.TEST_USER_EMAIL);
+    await page.locator('input[name="password"]').fill("wrongpassword");
+
+    await page.getByRole("button", { name: "Login" }).click();
+
+    await expect(page.locator("#message-container")).toContainText(
+      "Invalid email or password",
+    );
+  });
 });
