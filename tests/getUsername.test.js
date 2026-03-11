@@ -12,7 +12,7 @@ describe("getUsername", () => {
     expect(getUsername()).toBe("Jane");
   });
 
-  it("return null when no user exist instorage", () => {
+  it("return null when no user exist in storage", () => {
     expect(getUsername()).toBeNull();
   });
 });
