@@ -8,7 +8,7 @@ The focus of this assignment is to improve the development workflow and code qua
 
 - ESLint configuration for globals in the test files.
 - Prettier for automatic code formatting
-- Commit hooks with Husky and lint-staged
+- Pre-commit hooks with Husky and lint-staged
 - Unit testing with Vitest
 - End-to-end testing with Playwright
 - Environment variables for secure login testing
@@ -44,7 +44,7 @@ npm run test
 ### Playwright
 
 ```
-npm run test:e2e
+npm run e2e
 ```
 
 ## Environment variables
@@ -59,8 +59,13 @@ TEST_USER_PASSWORD=your-password
 ## Available Scripts
 
 - `npm start` - Start development server
-- `npm run test` - Run unit tests
-- `npm run test:e2e` - Run end-to-end tests
+- `npm run start` - Start with Live Server
+- `npm run build` - Build for production
+- `npm run test` - Run unit tests with Vitest
+- `npm run e2e` - Run end-to-end tests with playwright
+- `npm run e2e:ui` - Run playwright tests in UI mode
+- `npm run e2e:headed` - Run end-to-end tests with visible browser
+- `npm run e2e:debug` - Run playwright in debug mode
 
 ## Technologies
 
