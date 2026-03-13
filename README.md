@@ -78,6 +78,28 @@ TEST_USER_PASSWORD=your-password
 - Playwright
 - Husky
 
+## AI-Log
+
+- **Tool used:** ChatGPT
+- **Date:** 09 March 2026
+- **Purpose:**  Explanation of vulnerabilities when installing eslint. 
+- **Outcome:** Explained that this is common, some of the packages has known issues and does not effect my project.
+---
+- **Tool used:** ChatGPT
+- **Date:** 10 March 2026
+- **Purpose:**  Explanation of  Error: expect(page).not.toHaveURL(expected) failed
+- **Outcome:** Explained that Expected: not "http://localhost:5500/login/" Received: "http://localhost:5500/login/". 
+---
+- **Tool used:** ChatGPT
+- **Date:** 11 March 2026
+- **Purpose:**  How to target an element with noe class or id. 
+- **Outcome:** Explained that I could target the element using a parent selector and select the first link inside the container using  locators. Also asked the teacher about this, because I was confused. 
+---
+- **Tool used:** ChatGPT
+- **Date:** 10 March 2026
+- **Purpose:**  Explain purpose of playwright-report folder and test-result. 
+- **Outcome:**  Explained that it is generated testresults and should be in gitignore. 
+
 ## Author
 
 https://github.com/emifos
