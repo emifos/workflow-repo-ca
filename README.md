@@ -49,7 +49,7 @@ npm run e2e
 
 ## Environment variables
 
-Create a .env file in the root directory:
+Create a `.env` file in the root directory:
 
 ```
 TEST_USER_EMAIL=your-email@stud.noroff.no
